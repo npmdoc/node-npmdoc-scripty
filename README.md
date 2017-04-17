@@ -1,9 +1,11 @@
 # api documentation for  [scripty (v1.7.1)](https://github.com/testdouble/scripty#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-scripty.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scripty) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scripty.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scripty)
 #### Because no one should be shell-scripting inside a JSON file.
 
-[![NPM](https://nodei.co/npm/scripty.png?downloads=true)](https://www.npmjs.com/package/scripty)
+[![NPM](https://nodei.co/npm/scripty.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/scripty)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-scripty/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-scripty_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-scripty/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-scripty/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-scripty/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-scripty/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-scripty/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-scripty/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +19,7 @@
 
 {
     "author": {
-        "name": "Justin Searls",
-        "email": "searls@gmail.com"
+        "name": "Justin Searls"
     },
     "bin": {
         "scripty": "cli.js"
@@ -63,13 +64,11 @@
     "main": "lib/scripty.js",
     "maintainers": [
         {
-            "name": "searls",
-            "email": "searls@gmail.com"
+            "name": "searls"
         }
     ],
     "name": "scripty",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/testdouble/scripty.git"
@@ -95,16 +94,6 @@
     "version": "1.7.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module scripty](#apidoc.module.scripty)
-
-
-
-# <a name="apidoc.module.scripty"></a>[module scripty](#apidoc.module.scripty)
 
 
 
