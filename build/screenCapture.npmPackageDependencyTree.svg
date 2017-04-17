@@ -1,19 +1,22 @@
-<svg height="254" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="254" fill="#555" width="720"></rect>
+<svg height="302" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="302" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">└─┬ scripty@1.7.1 </tspan>
-<tspan x="10" y="42">  ├── async@1.5.2 </tspan>
-<tspan x="10" y="58">  ├─┬ glob@7.1.1 </tspan>
-<tspan x="10" y="74">  │ ├── fs.realpath@1.0.0 </tspan>
-<tspan x="10" y="90">  │ ├─┬ inflight@1.0.6 </tspan>
-<tspan x="10" y="106">  │ │ └── wrappy@1.0.2 </tspan>
-<tspan x="10" y="122">  │ ├── inherits@2.0.3 </tspan>
-<tspan x="10" y="138">  │ ├─┬ minimatch@3.0.3 </tspan>
-<tspan x="10" y="154">  │ │ └─┬ brace-expansion@1.1.6 </tspan>
-<tspan x="10" y="170">  │ │   ├── balanced-match@0.4.2 </tspan>
-<tspan x="10" y="186">  │ │   └── concat-map@0.0.1 </tspan>
-<tspan x="10" y="202">  │ ├── once@1.4.0 </tspan>
-<tspan x="10" y="218">  │ └── path-is-absolute@1.0.1 </tspan>
-<tspan x="10" y="234">  └── lodash@4.17.4</tspan>
+<tspan x="10" y="26">6 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ scripty@1.7.1 </tspan>
+<tspan x="10" y="90">  ├── async@1.5.2 </tspan>
+<tspan x="10" y="106">  ├─┬ glob@7.1.1 </tspan>
+<tspan x="10" y="122">  │ ├── fs.realpath@1.0.0 </tspan>
+<tspan x="10" y="138">  │ ├─┬ inflight@1.0.6 </tspan>
+<tspan x="10" y="154">  │ │ └── wrappy@1.0.2 </tspan>
+<tspan x="10" y="170">  │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="186">  │ ├─┬ minimatch@3.0.3 </tspan>
+<tspan x="10" y="202">  │ │ └─┬ brace-expansion@1.1.7 </tspan>
+<tspan x="10" y="218">  │ │   ├── balanced-match@0.4.2 </tspan>
+<tspan x="10" y="234">  │ │   └── concat-map@0.0.1 </tspan>
+<tspan x="10" y="250">  │ ├── once@1.4.0 </tspan>
+<tspan x="10" y="266">  │ └── path-is-absolute@1.0.1 </tspan>
+<tspan x="10" y="282">  └── lodash@4.17.4</tspan>
 </text>
 </svg>

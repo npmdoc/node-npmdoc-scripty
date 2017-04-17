@@ -61,12 +61,250 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.scripty">module scripty</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.scripty">
+            function <span class="apidocSignatureSpan"></span>scripty
+            <span class="apidocSignatureSpan">(mainArg, userOptions, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.load_option">
+            function <span class="apidocSignatureSpan">scripty.</span>load_option
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.optionify">
+            function <span class="apidocSignatureSpan">scripty.</span>optionify
+            <span class="apidocSignatureSpan">(rawFunc, defaultOptions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.toString">
+            function <span class="apidocSignatureSpan">scripty.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.scripty.load_option">module scripty.load_option</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.load_option.load_option">
+            function <span class="apidocSignatureSpan">scripty.</span>load_option
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.scripty.optionify">module scripty.optionify</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.optionify.optionify">
+            function <span class="apidocSignatureSpan">scripty.</span>optionify
+            <span class="apidocSignatureSpan">(rawFunc, defaultOptions)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.scripty.toString">module scripty.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scripty.toString.toString">
+            function <span class="apidocSignatureSpan">scripty.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.scripty" id="apidoc.module.scripty">module scripty</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.scripty" id="apidoc.element.scripty.scripty">
+        function <span class="apidocSignatureSpan"></span>scripty
+        <span class="apidocSignatureSpan">(mainArg, userOptions, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">scripty = function (mainArg, userOptions, cb) {
+  if (typeof userOptions === &#x27;function&#x27;) {
+    cb = userOptions
+  }
+  if (!cb) {
+    cb = NULL_CB
+  }
+  var fullOptions = _.defaultsDeep({}, userOptions, defaultOptions)
+  return rawFunc(mainArg, fullOptions, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.load_option" id="apidoc.element.scripty.load_option">
+        function <span class="apidocSignatureSpan">scripty.</span>load_option
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function loadOption(name) {
+  var env = process.env[&#x27;SCRIPTY_&#x27; + _.snakeCase(name).toUpperCase()]
+
+  if (env === &#x27;true&#x27;) return true
+  if (env === &#x27;false&#x27;) return false
+  if (env) return env
+
+  var pkg = process.env[&#x27;npm_package_scripty_&#x27; + name]
+
+  if (pkg === &#x27;true&#x27;) return true
+  if (pkg === &#x27;false&#x27;) return false
+  if (pkg) return pkg
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.optionify" id="apidoc.element.scripty.optionify">
+        function <span class="apidocSignatureSpan">scripty.</span>optionify
+        <span class="apidocSignatureSpan">(rawFunc, defaultOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optionify = function (rawFunc, defaultOptions) {
+  return function (mainArg, userOptions, cb) {
+    if (typeof userOptions === &#x27;function&#x27;) {
+      cb = userOptions
+    }
+    if (!cb) {
+      cb = NULL_CB
+    }
+    var fullOptions = _.defaultsDeep({}, userOptions, defaultOptions)
+    return rawFunc(mainArg, fullOptions, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.toString" id="apidoc.element.scripty.toString">
+        function <span class="apidocSignatureSpan">scripty.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.scripty.load_option" id="apidoc.module.scripty.load_option">module scripty.load_option</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.load_option.load_option" id="apidoc.element.scripty.load_option.load_option">
+        function <span class="apidocSignatureSpan">scripty.</span>load_option
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function loadOption(name) {
+  var env = process.env[&#x27;SCRIPTY_&#x27; + _.snakeCase(name).toUpperCase()]
+
+  if (env === &#x27;true&#x27;) return true
+  if (env === &#x27;false&#x27;) return false
+  if (env) return env
+
+  var pkg = process.env[&#x27;npm_package_scripty_&#x27; + name]
+
+  if (pkg === &#x27;true&#x27;) return true
+  if (pkg === &#x27;false&#x27;) return false
+  if (pkg) return pkg
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.scripty.optionify" id="apidoc.module.scripty.optionify">module scripty.optionify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.optionify.optionify" id="apidoc.element.scripty.optionify.optionify">
+        function <span class="apidocSignatureSpan">scripty.</span>optionify
+        <span class="apidocSignatureSpan">(rawFunc, defaultOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optionify = function (rawFunc, defaultOptions) {
+  return function (mainArg, userOptions, cb) {
+    if (typeof userOptions === &#x27;function&#x27;) {
+      cb = userOptions
+    }
+    if (!cb) {
+      cb = NULL_CB
+    }
+    var fullOptions = _.defaultsDeep({}, userOptions, defaultOptions)
+    return rawFunc(mainArg, fullOptions, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.scripty.toString" id="apidoc.module.scripty.toString">module scripty.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.scripty.toString.toString" id="apidoc.element.scripty.toString.toString">
+        function <span class="apidocSignatureSpan">scripty.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
