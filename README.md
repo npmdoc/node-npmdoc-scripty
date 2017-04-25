@@ -1,4 +1,7 @@
-# api documentation for  [scripty (v1.7.1)](https://github.com/testdouble/scripty#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-scripty.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scripty) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scripty.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scripty)
+# npmdoc-scripty
+
+#### basic api documentation for  [scripty (v1.7.1)](https://github.com/testdouble/scripty#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-scripty.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scripty) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scripty.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scripty)
+
 #### Because no one should be shell-scripting inside a JSON file.
 
 [![NPM](https://nodei.co/npm/scripty.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/scripty)

@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "scripty",
-    "description": "api documentation for [scripty (v1.7.1)](https://github.com/testdouble/scripty#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-scripty.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scripty) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scripty.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scripty)",
+    "description": "#### basic api documentation for  [scripty (v1.7.1)](https://github.com/testdouble/scripty#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-scripty.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scripty) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scripty.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scripty)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "scripty": "*",
